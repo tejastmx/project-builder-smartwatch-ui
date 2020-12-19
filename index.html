@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Smart Watch</title>
+</head>
+
+<body>
+    <section class="mainContainer">
+        <section class="leftContainer">
+            <div class="title">
+                <h1>SmartWatch</h1>
+            </div>
+        </section>
+        <section class="rightContainer">
+            <div class="watch">
+                <h4 id="topTime" onclick="showWatch()"></h4>
+                <div class="display" id="display">
+                    <div class="time" id="timeDisplay">
+                        <h1 id="time"></h1>
+                        <h5 id="day"></h5>
+                    </div>
+                    <div class="message" id="messageDisplay">
+                        <button onclick="showJavaMsg()">Java</button>
+                        <hr>
+                        <button onclick="showHtmlMsg()">Html</button>
+                        <hr>
+                        <button onclick="showCssMsg()">Css</button>
+                        <hr>
+                    </div>
+                    <div class="innermessage" id="innermessage">
+
+                    </div>
+                    <div class="music" id="musicDisplay">
+                        <div class="player">
+                            <article>
+                                <img id="songimg" src="https://i.ytimg.com/vi/BN63QQmn3Ck/maxresdefault.jpg"
+                                    onclick="playtrack()" alt="">
+                            </article>
+                            <article>
+                                <p id="trackname">Sunflower</p>
+                                <audio id="player">
+                                    <source src="./assests/sunflower.mp3" type="">
+                                </audio>
+                                <div class='play-pauseBtn'>
+                                    <button id="play-pause" onclick="playtrack()">Play</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="list">
+                            <ul id="orderList">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stopWatch" id="stopWatchDisplay">
+                        <h1 class="runningTime" id="runningTime">00:00:00</h1>
+                        <h3 class="pausedTime" id="pausedTime">00:00:00</h3>
+                        <div class="timerBtns">
+                        <button  onclick="reset()"><i class='fas fa-redo'></i></button>
+                        <button  onclick="start()"><i class='fas fa-play'></i></button>
+                        <button onclick="pause()"><i class='fas fa-pause' ></i></button>
+                        <button  onclick="stopTimer()"><i class='fas fa-stop'></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="btnMessage" onclick="showMessage()"><i class='fas fa-comments'
+                            id="message"></i></button>
+                    <button id="btnMusic" onclick="playMusic()"><i class='fas fa-music' id="music"></i></button>
+                    <button id="btnClock" onclick="showTimer()"><i class='far fa-clock' id="clock"></i></button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html> 
+
+        <div id="audio-container">
+            <!-- <audio id="myAudio1">
+                <source  src="Geeta Govindam.mp3" type="audio/mpeg">
+              </audio>
+              
+              <audio id="myAudio2">
+                    <source  src="Darbar.mp3" type="audio/mpeg">
+                </audio>
+                <div id="audio-top">
+              <p id="songname" style="margin-left: 20px;"></p>
+              <button id="before" onclick="playbefore()" type="button" ><i class='fas fa-fast-backward'></i></button>
+              <button class="playpause" onclick="playAudio()" type="button"><i class='fas fa-play'></i></button> 
+              <button id="after"onclick="playnxt()" type="button"><i class='fas fa-fast-forward'></i></button>
+              <button  class="playpause"type="n" id='stopButton' ><i class='fas fa-pause'></i></button> 
+            </div> -->
+             <div id='songlist'>
+              <p>1.Geeta Govindam song</p>
+              <p>2.Darbar song</p>
+              <p>3.Karabu song</p>
+              <p>4.Memories</p>
+              <p>5.Ramulo Ramula</p> 
+              <p>1.Geeta Govindam song</p>
+              <p>2.Darbar song</p>
+              <p>3.Karabu song</p>
+              <p>4.Memories</p>
+              <p>5.Ramulo Ramula</p> 
+            </div>
+        </div>
+   
